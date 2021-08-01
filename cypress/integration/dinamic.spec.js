@@ -18,4 +18,4 @@ describe('Dinamic testes', () => {
                 cy.get('#resultado > :nth-child(1)').should('contain', 'Cadastrado!')
         })
     })
-})
+})sdfsdf

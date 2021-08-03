@@ -38,7 +38,7 @@ Cypress.Commands.add('login', (user, password) => {
     cy.get(loc.Login.User).type(user)
     cy.get(loc.Login.Password).type(password)
     cy.get(loc.Login.Botao_Login).click()
-    cy.get(loc.Login.Menssagem).should('contain', 'Bem vindo')
+    cy.get(loc.Login.Menssagem_Bemvindo).should('contain', 'Bem vindo')
 })
 
 Cypress.Commands.add('resetApp', () => {

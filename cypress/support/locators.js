@@ -34,7 +34,8 @@ const locators = {
         Linhas: '.list-group > li',
         Funcao_Expath_BuscaElemento: (desc, value) => `//span[contains(., '${desc}')]/following-sibling::small[contains(., '${value}')]`,
         Funcao_Expath_RemoverElemento: conta => `//span[contains(., '${conta}')]/../../..//i[@class='far fa-trash-alt']`,
-        Funcao_Expath_AlterarElemento: conta => `//span[contains(., '${conta}')]/../../..//i[@class='fas fa-edit']`
+        Funcao_Expath_AlterarElemento: conta => `//span[contains(., '${conta}')]/../../..//i[@class='fas fa-edit']`,
+        Funcao_Expath_Linha: desc => `//*[@class='list-group-item list-group-item-action flex-column align-items-start ${desc}']`
     },
 
     Saldo: {
